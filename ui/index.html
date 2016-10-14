@@ -28,15 +28,20 @@
         </div>
         <br>
         <div class="center text-big bold">
-            Hi! I am Surjit Paul and this is my webapp.
+            Hi! I am Surjit Paul and this is my webapp.<br>
             <form name="frmnew">
-                Enter First No. <input type="text" name="txtfirstno">
-                Enter First No. <input type="text" name="txtsecondno">
-                Result: <input type="text" name="txtresult">
-                <input type="button" name="btnaddclick" value="Add" onclick="Sum()">
-                <input type="button" name="btnsubclick" value="Subtract" onclick="Minus()">
-                <input type="button" name="btnmulclick" value="Multiply" onclick="Mul()">
-                <input type="button" name="btndivclick" value="Divide" onclick="Div()">
+                <table width="50%">
+                    <tr><td>Enter First No.</td><td><input type="text" name="txtfirstno"></td></tr>
+                    <tr><td>Enter Second No.</td><td><input type="text" name="txtsecondno"></td></tr>
+                    <tr><td>Result: </td><td><input type="text" name="txtresult"></td></tr>
+                    <tr>
+                        <td><input type="button" name="btnaddclick" value="Add" onclick="Sum()">
+                            <input type="button" name="btnsubclick" value="Subtract" onclick="Minus()">
+                            <input type="button" name="btnmulclick" value="Multiply" onclick="Mul()">
+                            <input type="button" name="btndivclick" value="Divide" onclick="Div()">
+                        </td>
+                    </tr>
+                </table>
             </form>
         </div>
         <script type="text/javascript" src="/ui/main.js">
