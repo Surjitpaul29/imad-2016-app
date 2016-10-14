@@ -2,6 +2,25 @@
 <html>
     <head>
         <link href="/ui/style.css" rel="stylesheet" />
+        <script>
+            
+            function Add()
+            {
+                document.frmnew.txtresult.value=eval(document.frmnew.txtfirstno.value) + eval(document.frmnew.secondno.value);
+            }
+            function Minus()
+            {
+                document.frmnew.txtresult.value=eval(document.frmnew.txtfirstno.value) - eval(document.frmnew.secondno.value);
+            }
+            function Mul()
+            {
+                document.frmnew.txtresult.value=eval(document.frmnew.txtfirstno.value) * eval(document.frmnew.secondno.value);
+            }
+            function Div()
+            {
+                document.frmnew.txtresult.value=eval(document.frmnew.txtfirstno.value) / eval(document.frmnew.secondno.value);
+            }
+        </script>
     </head>
     <body>
         <div class="center">
@@ -10,6 +29,15 @@
         <br>
         <div class="center text-big bold">
             Hi! I am Surjit Paul and this is my webapp.
+            <form name="frmnew">
+                Enter First No. <input type="text" name="txtfirstno">
+                Enter First No. <input type="text" name="txtsecondno">
+                Result: <input type="text" name="txtresult">
+                <input type="button" name="btnaddclick" value="Add" onclick="Sum()">
+                <input type="button" name="btnsubclick" value="Subtract" onclick="Minus()">
+                <input type="button" name="btnmulclick" value="Multiply" onclick="Mul()">
+                <input type="button" name="btndivclick" value="Divide" onclick="Div()">
+            </form>
         </div>
         <script type="text/javascript" src="/ui/main.js">
         </script>
