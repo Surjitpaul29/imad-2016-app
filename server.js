@@ -39,6 +39,10 @@ pool.query('select * from Student',function(err,result){
    if(err){
         res.status(500).send(err.toString());
     } 
+    else
+    {
+        res.send(result);
+    }
 });
     
 });
