@@ -41,7 +41,7 @@ pool.query('select * from Student',function(err,result){
     } 
     else
     {
-        res.send(result);
+        res.send(result.toString());
     }
 });
     
