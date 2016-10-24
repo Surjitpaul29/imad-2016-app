@@ -33,6 +33,7 @@ app.get('/ui/style.css', function (req, res) {
 var pool=new Pool(config);
 
 app.get('/test-db',function(req,res){
+    res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 //make a database query
 pool.query('select * from Student',function(err,result){
     
