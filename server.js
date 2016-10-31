@@ -10,6 +10,12 @@ var config={
     port: '5432',
     password: process.env.DB_Password
 };
+var content= {
+  title: 'Article one | Surjit Paul',
+  heading: 'Article One',
+  date: 'Octber 20, 2016',
+  content:'ts of my first article.Plese see the details.'
+};
 
 var app = express();
 app.use(morgan('combined'));
