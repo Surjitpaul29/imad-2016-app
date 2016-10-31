@@ -48,7 +48,7 @@ pool.query("select * from Student",function(err,result){
 });
 
 app.get('/ui/madi.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+  res.sendFile(path.join(__dirname, 'ui', 'surjit.png'));
 });
 
 
